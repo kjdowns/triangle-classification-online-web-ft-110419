@@ -21,6 +21,9 @@ class Triangle
   
   def isosceles?
     #isosceles triangles have two sides equal
+    ((self.side1 == self.side2) && (self.side2 != self.side3)) ||
+    ((self.side2 == self.side3) && (self.side3 != self.side1)) ||
+    ((self.side3 == self.side1) && (self.side1 != self.side2))
   end
   
   def scalene?
