@@ -28,6 +28,7 @@ class Triangle
   
   def scalene?
     #scalene triangles have no equal sides
+    (self.side1 != self.side2) && (self.side2 != self.side3) && (self.side3 != self.side1) 
   end
   
   def set_type(type)
