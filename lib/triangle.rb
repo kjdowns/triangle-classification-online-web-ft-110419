@@ -44,7 +44,7 @@ class Triangle
     @type = type
   end
   
-  class TriangleErroe < StandardError
+  class TriangleError < StandardError
     
     def message
       "Invalid parameters!! Lengths violate triangle inequality"
