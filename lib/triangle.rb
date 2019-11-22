@@ -10,12 +10,14 @@ class Triangle
   end
   
   def kind 
-    
+    case
+      when self.side1 == self.side2 == self.side3
     
     scalene triangles have no equal sides
     isosceles triangles have two sides equal
     equilateral triangles have equal sides
     
+    self.type
     
   end
   
