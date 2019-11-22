@@ -18,12 +18,7 @@ class Triangle
       when self.scalene? && self.valid?
         set_type(:scalene)
       else
-        #begin
-          raise TriangleError
-        #rescue TriangleError => error 
-         # puts error.message
-          #binding.pry
-        #end
+        raise TriangleError
       end
     self.type
   end
