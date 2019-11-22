@@ -13,9 +13,13 @@ class Triangle
     
     
     scalene triangles have no equal sides
-    isosceles triangles have first and last sides equal
+    isosceles triangles have two sides equal
     equilateral triangles have equal sides
     
+    
+  end
+  
+  def determine_type
     
   end
   
