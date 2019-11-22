@@ -57,7 +57,7 @@ class Triangle
   def set_type(type)
     @type = type
   end
-  
+
   class TriangleError < StandardError
     
     def message
