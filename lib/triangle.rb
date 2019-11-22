@@ -19,10 +19,6 @@ class Triangle
     
   end
   
-  def determine_type
-    
-  end
-  
   def set_type(type)
     @type = type
   end
