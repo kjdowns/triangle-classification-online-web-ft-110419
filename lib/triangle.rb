@@ -11,11 +11,11 @@ class Triangle
   
   def kind 
     case
-      when self.equilateral?
-        set_type(:equilateral)
-      when self.isosceles?
+      when self.equilateral? && self valid?
+        set_type(:equilateral) 
+      when self.isosceles? && self valid?
         set_type(:isosceles)
-      when self.scalene?
+      when self.scalene? && self valid?
         set_type(:scalene)
       else
         begin
