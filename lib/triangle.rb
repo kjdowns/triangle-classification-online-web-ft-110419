@@ -14,7 +14,7 @@ class Triangle
       when self.equilateral?
         set_type(:equilateral)
       when self.isosceles?
-        set_type(:isoceles)
+        set_type(:isosceles)
       when self.scalene?
         set_type(:scalene)
       else
