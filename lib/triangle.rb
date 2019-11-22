@@ -18,7 +18,10 @@ class Triangle
       when self.scalene?
         set_type(:scalene)
       else
-        
+        begin
+          raise TriangleError
+          
+        end
       end
     self.type
   end
