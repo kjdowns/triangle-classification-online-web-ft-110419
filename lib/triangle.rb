@@ -46,7 +46,9 @@ class Triangle
   
   class TriangleErroe < StandardError
     
-    
+    def message
+      "Invalid parameters!! Lengths violate triangle inequality"
+    end
     
   end
   
