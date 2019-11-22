@@ -10,17 +10,21 @@ class Triangle
   end
   
   def kind 
-    case
-      when self.side1 == self.side2 && self.side2 == self.side3
-        #equilateral triangles have equal sides
-        self.set_type(:equilateral)
-      when
-    
-    scalene triangles have no equal sides
-    isosceles triangles have two sides equal
     
     self.type
-    
+  end
+  
+  def equilateral?
+    #equilateral triangles have equal sides
+    self.side1 == self.side2 && self.side2 == self.side3
+  end
+  
+  def isosceles?
+    #isosceles triangles have two sides equal
+  end
+  
+  def scalene?
+    #scalene triangles have no equal sides
   end
   
   def set_type(type)
