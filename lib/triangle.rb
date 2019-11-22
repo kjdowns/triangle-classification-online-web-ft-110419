@@ -44,6 +44,15 @@ class Triangle
     (self.side1 != self.side2) && (self.side2 != self.side3) && (self.side3 != self.side1) 
   end
   
+  def valid?
+    if (self.side1 + self.side2 + self.side3) == 0
+      return false
+    end
+    ((self.side1 + self.side2) > self.side3) &&
+    ((self.side2 + self.side3) > self.side1) &&
+    ((self.side3 + self.side1) > self.side2)
+  end
+  
   def set_type(type)
     @type = type
   end
