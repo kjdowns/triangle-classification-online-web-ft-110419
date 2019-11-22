@@ -13,7 +13,8 @@ class Triangle
     case
       when self.side1 == self.side2 && self.side2 == self.side3
         #equilateral triangles have equal sides
-        
+        self.set_type(:equilateral)
+      when
     
     scalene triangles have no equal sides
     isosceles triangles have two sides equal
