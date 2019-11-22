@@ -44,4 +44,10 @@ class Triangle
     @type = type
   end
   
+  class TriangleErroe < StandardError
+    
+    
+    
+  end
+  
 end
