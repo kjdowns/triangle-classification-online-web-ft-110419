@@ -10,7 +10,16 @@ class Triangle
   end
   
   def kind 
-    
+    case
+      when self.equilateral?
+        set_type(:equilateral)
+      when self.isosceles?
+        set_type(:isoceles)
+      when self.scalene?
+        set_type(:scalene)
+      else
+        
+      end
     self.type
   end
   
